@@ -31,7 +31,7 @@ jobs:
 
       - run: ng build 
 
-      - run: zip -r package.zip dist/package/ 
+      - run: zip -r package.zip dist/package/  
 
       - save_cache:
           paths:
