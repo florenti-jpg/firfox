@@ -31,7 +31,7 @@ jobs:
 
       - run: ng build 
 
-      - run: zip -r package.zip dist/package/  
+      - run: zip -r firfox.zip renti/firfox/  
 
       - save_cache:
           paths:
