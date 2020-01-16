@@ -40,3 +40,4 @@ jobs:
 
       # run tests!
       - run: ng lint  --force=true
+      - run: ng test 
