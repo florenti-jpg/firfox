@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:latest
+      - image: circleci/node:lts
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -29,8 +29,7 @@ jobs:
       - run: sudo npm i -g @angular/cli > /dev/null
       - run: npm i
       - run: ng build
-      - run: zip -r firfox.zip dist/firfox/
-
+      - run: zip -r package.zip dist/package/
 
       - save_cache:
           paths:
